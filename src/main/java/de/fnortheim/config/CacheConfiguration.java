@@ -42,6 +42,7 @@ public class CacheConfiguration {
             cm.createCache(de.fnortheim.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(de.fnortheim.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(de.fnortheim.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(de.fnortheim.domain.Task.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
